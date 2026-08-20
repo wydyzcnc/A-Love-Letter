@@ -6,11 +6,13 @@
 		{
 			"id": 1001,
 			"title": "生日快乐",
+			"newsImg": "/static/pic/srklbj.jpg",
 			"date": "2026-06-07"
 		},
 		{
 			"id": 1002,
 			"title": "七夕祝福语",
+			"newsImg": "/static/pic/qxklbj.jpg",
 			"date": "2026-08-19"
 		}
 	]

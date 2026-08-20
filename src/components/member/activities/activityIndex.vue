@@ -3,7 +3,7 @@
     <div class="activeItem" v-for="item in itemList">
       <router-link :to="'/activityDetail/' + item.id">
         <div class="newsImg">
-          <img src="/static/pic/lfxbj.jpg" />
+          <img :src="item.newsImg" />
         </div>
         <div class='sbottom'>
           <p class="title">{{ item.title }}</p>

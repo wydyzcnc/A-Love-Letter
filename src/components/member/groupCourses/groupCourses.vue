@@ -3,11 +3,10 @@
 
     <div class="classItems">
       <div class="activeItem" v-for="(item, index) in courseList" :key="index">
-        <img src="/static/pic/qixibj.jpg" />
+        <img :src="item.img" />
         <div class='sbottom'>
           <p class="title">{{ item.title }}</p>
-          <p class="time-line"><span class='time'>{{ item.startTime }} - {{ item.endTime }}</span>
-            <span class="view">{{ item.viewer }}</span>
+          <p class="time-line"><span class='time'>{{ item.date }}</span>
           </p>
         </div>
 
