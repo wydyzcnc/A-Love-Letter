@@ -10,19 +10,19 @@
       <router-view></router-view>
       <tabbar v-show="footerShow">
         <tabbar-item link="/activityIndex">
-          <img slot="icon" src="/static/icons/news_icon.png">
+          <img slot="icon" src="/static/icons/Love_letter.svg">
           <span slot="label">LFX</span>
         </tabbar-item>
         <tabbar-item link="/groupCourses">
-          <img slot="icon" src="/static/icons/purpose_icon.png">
+          <img slot="icon" src="/static/icons/yieri_con.svg">
           <span slot="label">一二</span>
         </tabbar-item>
         <tabbar-item link="/personalCourses">
-          <img slot="icon" src="/static/icons/private_icon.png">
+          <img slot="icon" src="/static/icons/bubui_con.svg">
           <span slot="label">布布</span>
         </tabbar-item>
         <tabbar-item selected link="/love-lfx">
-          <img slot="icon" src="/static/icons/mine_icon.png">
+          <img slot="icon" src="/static/icons/home_icon.svg">
           <span slot="label">首页</span>
         </tabbar-item>
       </tabbar>
