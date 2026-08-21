@@ -4,25 +4,28 @@
       <div class="vux-demo-header-box" slot="header">
         <x-header :left-options="{ backText: '' }" v-show="headShow">{{ pageTitle }}</x-header>
       </div>
+
       <div v-transfer-dom class="loading-box">
         <loading :show="loading" position="absolute"></loading>
       </div>
+
       <router-view></router-view>
+
       <tabbar v-show="footerShow">
         <tabbar-item link="/activityIndex">
-          <img slot="icon" src="/static/icons/Love_letter.svg">
+          <img slot="icon" src="/static/svg/love_icon.svg">
           <span slot="label">LFX</span>
         </tabbar-item>
         <tabbar-item link="/groupCourses">
-          <img slot="icon" src="/static/icons/yieri_con.svg">
+          <img slot="icon" src="/static/svg/yier_icon.svg">
           <span slot="label">一二</span>
         </tabbar-item>
         <tabbar-item link="/personalCourses">
-          <img slot="icon" src="/static/icons/bubui_con.svg">
+          <img slot="icon" src="/static/svg/bubu_icon.svg">
           <span slot="label">布布</span>
         </tabbar-item>
         <tabbar-item selected link="/love-lfx">
-          <img slot="icon" src="/static/icons/home_icon.svg">
+          <img slot="icon" src="/static/svg/home_icon.svg">
           <span slot="label">首页</span>
         </tabbar-item>
       </tabbar>

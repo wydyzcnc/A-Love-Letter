@@ -16,8 +16,8 @@
 
 		<!-- 角色层 -->
 		<div class="characters-wrapper">
-			<img src="/static/pic/bear.gif" class="character male" alt="布布" />
-			<img src="/static/pic/panda.gif" class="character female" alt="一二" />
+			<img :src="objectData.bgMsgL" class="character male" alt="布布" />
+			<img :src="objectData.bgMsgR" class="character female" alt="一二" />
 			<div class="hearts-container">
 				<div class="heart heart1">❤️</div>
 				<div class="heart heart2">❤️</div>
@@ -59,7 +59,8 @@
 		</div>
 
 		<!-- 背景音乐层 -->
-		<audio ref="bgMusic" :src="objectData.musicSrc" preload="auto" @ended="handleMusicEnded">
+		<!-- <audio ref="bgMusic" :src="objectData.musicSrc" preload="auto" @ended="handleMusicEnded"> -->
+		<audio ref="bgMusic" src="/static/mp3/qixi.mp3" preload="auto" @ended="handleMusicEnded">
 			您的浏览器不支持音频播放。
 		</audio>
 
@@ -79,7 +80,7 @@ export default {
 			duration: 1.5 + Math.random() * 2
 		}));
 
-		this.loadDetail();
+		this.loadDetail(); // 加载数据
 	},
 
 	beforeDestroy() {
@@ -120,10 +121,10 @@ export default {
 					const result = data.returnObject.find(item => item.id == targetId);
 					self.objectData = result // 赋值
 
-					self.newTitleName()
-					// 播放音频
-					self.startScene()
+					self.newTitleName() //设置标题
 
+					// 播放音频
+					self.startScene();
 				}
 			})
 		},

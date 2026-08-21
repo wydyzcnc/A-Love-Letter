@@ -8,8 +8,10 @@
         <div class='sbottom'>
           <p class="title">{{ item.title }}</p>
           <p class="time-line">
-            <span class="view"><span class="view_icon"><img src="/static/icons/view.png">
-              </span>{{ item.date }}</span>
+            <span class="view">
+              <span class="view_icon"><img src="/static/icons/view.png"></span>
+              {{ item.date }}
+            </span>
           </p>
         </div>
       </router-link>
@@ -63,27 +65,27 @@ export default {
 .activityIndex .activeItem .sbottom {
   color: white;
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   padding: 10px;
-  width: 85%;
+  width: 91%;
 }
 
  .activityIndex .activeItem .title {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .activityIndex .time-line {
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   height: 20px;
 }
 
 .activityIndex .activeItem .view {
   float: right;
-  font-size: 14px;
 }
 
 .activityIndex .activeItem .newsImg img {
